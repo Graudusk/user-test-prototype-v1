@@ -1,0 +1,33 @@
+<footer>
+    <p class="text-center text-muted">© Copyright 2019 Eric Johansson
+    <script type="text/javascript">
+        const toggler = document.querySelector('.toggleMenu');
+        const menu = document.querySelector('.menu');
+        const backfill = document.querySelector('.backfill');
+
+        backfill.addEventListener('click', () => {
+            toggler.classList.remove('menuActive');
+            document.scrollingElement.classList.remove('menuActive');
+        });
+
+        toggler.addEventListener('click', () => {
+            toggler.classList.toggle('menuActive');
+            document.scrollingElement.classList.toggle('menuActive');
+        });
+
+        const btns = document.querySelectorAll('.button');
+
+        for (let btn of btns) {
+            btn.addEventListener('click', () => {
+                btn.classList.add('clicked');
+                setTimeout(function() {
+                    btn.classList.remove('clicked');
+                }, 500);
+            });
+        }
+
+
+    </script>
+</footer>
+</body>
+</html>

@@ -1,0 +1,342 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  /*font-size: 14px;*/
+  line-height: 1.5;
+  padding-top: 47px;
+  margin: 0;
+  font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif;
+  text-rendering: optimizeLegibility;
+  padding-bottom: 47px;
+  color: #111;
+  /*background: #333;*/
+}
+.breadcrumbs {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.article-image {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+html.menuActive {
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+p.pre-line {
+  white-space: pre-line;
+}
+
+.error-msg {
+  background: #d82c2c;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.msg {
+  background: #3da659;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.c1,
+.c2,
+.c3,
+.c4,
+.c5 {
+  width: 100%;
+  box-sizing: border-box;
+  /*border: 1px solid #333;*/
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  background: #fff;
+  -moz-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+    0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+header nav {
+  /*display: none;*/
+  top: 0;
+}
+
+footer nav {
+  bottom: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 12px 28px;
+  display: block;
+}
+
+article {
+  margin: auto;
+  display: grid;
+  position: relative;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+article > .summary-image {
+  object-fit: cover;
+  width: 60px;
+  height: 60px;
+  grid-column: 1;
+  grid-column-start: 1;
+  grid-column-end: auto;
+  margin-right: 12px;
+  margin-top: 12px;
+  border-radius: 100%;
+}
+.backfill {
+  display: none;
+  position: absolute;
+  background: #0000004d;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+.drawer ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.drawer ul a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.menuActive .backfill {
+  display: block;
+}
+
+article > p {
+  /*font-size: 1.5em;*/
+  grid-column: 2/3;
+  font-weight: bold;
+  margin: 0;
+}
+
+article date {
+  font-size: 70%;
+  color: #777;
+}
+
+article > .article-link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+/*
+footer {
+  text-align: center;
+  background: #f1f1f1;
+  border-top: 1px #dfdfdf solid;
+}*/
+
+p {
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btns {
+  margin: auto;
+  /*width: 100%;*/
+}
+
+.button {
+  font-size: 1.2em;
+  display: block;
+  padding: 12px 28px;
+  border: 1px solid #6868ff;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #6868ff;
+  margin: auto;
+  margin-bottom: 12px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+form {
+  margin: auto;
+  width: 100%;
+}
+
+form input[type='text'],
+form input[type='email'],
+form input[type='password'] {
+  font-size: 1em;
+  padding: 12px;
+  margin-bottom: 12px;
+  max-width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+  margin-bottom: auto;
+  margin-bottom: 12px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a.button {
+  text-decoration: none;
+  color: #fff;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.navbar-big {
+  display: none;
+}
+.navbar-small {
+  display: block;
+}
+
+.navbar-small a,
+.menu a {
+  color: #919191;
+}
+
+@media (min-width: 600px) {
+  .c2,
+  .c3,
+  .c4,
+  .c5 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    /*padding-top: 47px;*/
+  }
+  .c1 {
+    width: 60%;
+  }
+  .c2 {
+    width: 40%;
+  }
+  /* Using 33.33%, doesn't always work right due to rounding */
+  .c3,
+  .c4 {
+    width: 33%;
+  }
+  .c5 {
+    width: 34%;
+  }
+
+  nav ul {
+    justify-content: space-evenly;
+    width: 800px;
+    margin: auto;
+  }
+  .container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header nav {
+    display: block;
+  }
+
+  footer nav {
+    display: none;
+  }
+
+  .navbar-big {
+    display: block;
+  }
+  .navbar-small {
+    display: none;
+  }
+}
+.menu {
+  transition: left 0.3s ease-in;
+  position: absolute;
+  left: -30%;
+  z-index: 998;
+  color: #005c9c;
+  background: #fff;
+  width: 30%;
+  height: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu {
+    width: 80%;
+    left: -100%;
+  }
+}
+
+.menuActive .menu {
+  left: 0;
+  opacity: 1;
+}
+
+.menu p {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
